@@ -1,0 +1,25 @@
+1713782130340	geckodriver	INFO	Listening on 127.0.0.1:60234
+1713782133480	mozrunner::runner	INFO	Running command: "C:\\Users\\Lenovo\\.cache\\selenium\\firefox\\win64\\125.0.1\\firefox.exe" "--marionette" "--remote-debuggi ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\rust_mozprofilex82NfC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1713782134450	Marionette	INFO	Marionette enabled
+1713782134613	Marionette	INFO	Listening on port 60267
+WebDriver BiDi listening on ws://127.0.0.1:60235
+Read port: 60267
+1713782134915	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60235/devtools/browser/4eedb8a0-1345-4e2d-8e62-8f127bb26fdd
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tty_OrL5QYfKemQRIlHGQG9kTttTJdYWl-vmWjncNec.js line 2 > eval line 6324 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tty_OrL5QYfKemQRIlHGQG9kTttTJdYWl-vmWjncNec.js line 2 > eval line 28 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tty_OrL5QYfKemQRIlHGQG9kTttTJdYWl-vmWjncNec.js line 2 > eval line 4903 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/tty_OrL5QYfKemQRIlHGQG9kTttTJdYWl-vmWjncNec.js line 2 > eval line 5196 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true, line 75: Script terminated by timeout at:
+U@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:75:350
+tf.prototype.sendBeacon@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:78:176
+uf@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:76:306
+tf/this.T@https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true:74:33
+
+1713782151919	Marionette	INFO	Stopped listening on port 60267
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.

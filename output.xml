@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-27T19:49:27.128508" rpa="false" schemaversion="5">
+<suite id="s1" name="Selenium" source="c:\Users\Lenovo\Automation\selenium.robot">
+<test id="s1-t1" name="testcase-2(SwitchTo)" line="46">
+<kw name="Setup OPen Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-27T19:49:28.177102" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-04-27T19:49:28.743606" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-27T19:49:54.948511" level="INFO">${broweser} = 1</msg>
+<var>${broweser}</var>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-27T19:49:28.170300" elapsed="26.778211"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-27T19:49:54.956740" elapsed="0.240540"/>
+</kw>
+<return>
+<value>${broweser}</value>
+<status status="PASS" start="2024-04-27T19:49:55.205261" elapsed="0.000000"/>
+</return>
+<status status="PASS" start="2024-04-27T19:49:28.147104" elapsed="27.058157"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-27T19:49:55.213259" level="INFO">Clicking element '//*[text()='SwitchTo']'.</msg>
+<arg>//*[text()='SwitchTo']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-27T19:49:55.213259" elapsed="0.162589"/>
+</kw>
+<status status="PASS" start="2024-04-27T19:49:28.147104" elapsed="27.237580"/>
+</test>
+<status status="PASS" start="2024-04-27T19:49:27.179954" elapsed="28.221160"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Selenium">Selenium</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-27T19:49:28.743606" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
