@@ -17,4 +17,12 @@ click on button
     ${clik_submit_button}    Format String    ${submit}    ${text}  
     Click Element    ${clik_submit_button}
     RETURN    ${clik_submit_button}
+
+Fill Name Field
+    ${Name}=    Input Text    //div[@class="form-group"]//div[1]//input    sandhiaakibtestlocator    
+    RETURN    ${Name}
+
+Fill Surname
+    ${surname}=    Input Text    //div[@class="form-group"]//div[2]//input    sandhil
+    RETURN    ${surname}
     
