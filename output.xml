@@ -1,49 +1,311 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-27T19:49:27.128508" rpa="false" schemaversion="5">
-<suite id="s1" name="Selenium" source="c:\Users\Lenovo\Automation\selenium.robot">
-<test id="s1-t1" name="testcase-2(SwitchTo)" line="46">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-29T09:59:54.412997" rpa="false" schemaversion="5">
+<suite id="s1" name="Selenium" source="C:\Users\Lenovo\Automation-1\selenium.robot">
+<test id="s1-t1" name="testcase1" line="23">
 <kw name="Setup OPen Browser">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-27T19:49:28.177102" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
-<msg time="2024-04-27T19:49:28.743606" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2024-04-27T19:49:54.948511" level="INFO">${broweser} = 1</msg>
+<msg time="2024-04-29T09:59:54.743452" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-04-29T09:59:55.936788" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-29T09:59:57.257049" level="INFO">${broweser} = 1</msg>
 <var>${broweser}</var>
 <arg>https://demo.automationtesting.in/Register.html</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-27T19:49:28.170300" elapsed="26.778211"/>
+<status status="PASS" start="2024-04-29T09:59:54.743452" elapsed="2.513597"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-27T19:49:54.956740" elapsed="0.240540"/>
+<status status="PASS" start="2024-04-29T09:59:57.257049" elapsed="2.846514"/>
 </kw>
 <return>
 <value>${broweser}</value>
-<status status="PASS" start="2024-04-27T19:49:55.205261" elapsed="0.000000"/>
+<status status="PASS" start="2024-04-29T10:00:00.103563" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2024-04-27T19:49:28.147104" elapsed="27.058157"/>
+<status status="PASS" start="2024-04-29T09:59:54.727917" elapsed="5.375646"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T10:00:03.103862" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T10:00:00.103563" elapsed="3.000299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:03.104871" level="INFO">Typing text 'sandhiaakibtest' into text field '//div[@class="form-group"]//div[1]//input'.</msg>
+<arg>//div[@class="form-group"]//div[1]//input</arg>
+<arg>sandhiaakibtest</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:03.103862" elapsed="0.186166"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:03.290028" level="INFO">Typing text 'sandhi' into text field '//div[@class="form-group"]//div[2]//input'.</msg>
+<arg>//div[@class="form-group"]//div[2]//input</arg>
+<arg>sandhi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:03.290028" elapsed="0.101064"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:03.391092" level="INFO">Typing text 'AAa' into text field '//textarea[@rows="3"]'.</msg>
+<arg>//textarea[@rows="3"]</arg>
+<arg>AAa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:03.391092" elapsed="0.085430"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:03.476522" level="INFO">Typing text 'sandhiaaa@gmail.com' into text field '//input[@type="email"]'.</msg>
+<arg>//input[@type="email"]</arg>
+<arg>sandhiaaa@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:03.476522" elapsed="0.109444"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:03.585966" level="INFO">Clicking button '//input[@value="Male"]'.</msg>
+<arg>//input[@value="Male"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:03.585966" elapsed="0.099923"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-29T10:00:05.686345" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-29T10:00:03.685889" elapsed="2.000456"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//button[text()=' Submit ']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-04-29T10:00:05.687450" elapsed="5.316281"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-04-27T19:49:55.213259" level="INFO">Clicking element '//*[text()='SwitchTo']'.</msg>
+<msg time="2024-04-29T10:00:11.003731" level="INFO">Clicking element '//select[@id="Skills"]//option[2]'.</msg>
+<arg>//select[@id="Skills"]//option[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.003731" elapsed="0.080174"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.083905" level="INFO">Clicking element '//select[@id="countries"]//option'.</msg>
+<arg>//select[@id="countries"]//option</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.083905" elapsed="0.050409"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.134314" level="INFO">Clicking element '//span[@class="selection"]//span'.</msg>
+<arg>//span[@class="selection"]//span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.134314" elapsed="0.086022"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.221345" level="INFO">Typing text 'Australia' into text field '//input[@type='search']'.</msg>
+<arg>//input[@type='search']</arg>
+<arg>Australia</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.221345" elapsed="0.098762"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.333157" level="INFO">Clicking element '//select[@placeholder="Year"]//option[5]'.</msg>
+<arg>//select[@placeholder="Year"]//option[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.333157" elapsed="0.041769"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.374926" level="INFO">Clicking element '//select[@placeholder="Month"]//option[4]'.</msg>
+<arg>//select[@placeholder="Month"]//option[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.374926" elapsed="0.029272"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.404198" level="INFO">Clicking element '//select[@placeholder="Day"]//option[1]'.</msg>
+<arg>//select[@placeholder="Day"]//option[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.404198" elapsed="0.031886"/>
+</kw>
+<kw name="click on button">
+<kw name="Format String" owner="String">
+<msg time="2024-04-29T10:00:11.436084" level="INFO">${clik_submit_button} = //button[text()=' Submit ']</msg>
+<var>${clik_submit_button}</var>
+<arg>${submit}</arg>
+<arg>${text}</arg>
+<doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
+<status status="PASS" start="2024-04-29T10:00:11.436084" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:11.436084" level="INFO">Clicking element '//button[text()=' Submit ']'.</msg>
+<msg time="2024-04-29T10:00:12.769498" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-29T10:00:12.769498" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submitbtn" type="submit" class="btn btn-primary" name="signup" value="sign up"&gt;...&lt;/button&gt; is not clickable at point (692, 660). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20240424/r20110914/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKbM66XL5oUDFUEPgwMdxJYBDg" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=124.0.6367.63)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B49770C2+63090]
+	(No symbol) [0x00007FF7B48E2D12]
+	(No symbol) [0x00007FF7B477EC65]
+	(No symbol) [0x00007FF7B47CBB34]
+	(No symbol) [0x00007FF7B47C9954]
+	(No symbol) [0x00007FF7B47C7164]
+	(No symbol) [0x00007FF7B47C5EF9]
+	(No symbol) [0x00007FF7B47BA708]
+	(No symbol) [0x00007FF7B47E6FDA]
+	(No symbol) [0x00007FF7B47BA00A]
+	(No symbol) [0x00007FF7B47E71F0]
+	(No symbol) [0x00007FF7B4803412]
+	(No symbol) [0x00007FF7B47E6D83]
+	(No symbol) [0x00007FF7B47B83A8]
+	(No symbol) [0x00007FF7B47B9441]
+	GetHandleVerifier [0x00007FF7B4D7262D+4238301]
+	GetHandleVerifier [0x00007FF7B4DAF78D+4488509]
+	GetHandleVerifier [0x00007FF7B4DA7A6F+4456479]
+	GetHandleVerifier [0x00007FF7B4A50606+953270]
+	(No symbol) [0x00007FF7B48EE5DF]
+	(No symbol) [0x00007FF7B48E92B4]
+	(No symbol) [0x00007FF7B48E93EB]
+	(No symbol) [0x00007FF7B48D9C24]
+	BaseThreadInitThunk [0x00007FFA84E9257D+29]
+	RtlUserThreadStart [0x00007FFA863EAA48+40]
+</msg>
+<arg>${clik_submit_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-29T10:00:11.436084" elapsed="1.398496">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submitbtn" type="submit" class="btn btn-primary" name="signup" value="sign up"&gt;...&lt;/button&gt; is not clickable at point (692, 660). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20240424/r20110914/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKbM66XL5oUDFUEPgwMdxJYBDg" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=124.0.6367.63)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B49770C2+63090]
+	(No symbol) [0x00007FF7B48E2D12]
+	(No symbol) [0x00007FF7B477EC65]
+	(No symbol) [0x00007FF7B47CBB34]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7B47C7164]
+	(No symbol) [0x00007FF7B47C5EF9]
+	(No symbol) [0x00007FF7B47BA708]
+	(No symbol) [0x00007FF7B47E6FDA]
+	(No symbol) [0x00007FF7B47BA00A]
+	(No symbol) [0x00007FF7B47E71F0]
+	(No symbol) [0x00007FF7B4803412]
+	(No symbol) [0x00007FF7B47E6D83]
+	(No symbol) [0x00007FF7B47B83A8]
+	(No symbol) [0x00007FF7B47B9441]
+	GetHandleVerifier [0x00007FF7B4D7262D+4238301]
+	GetHandleVerifier [0x00007FF7B4DAF78D+4488509]
+	GetHandleVerifier [0x00007FF7B4DA7A6F+4456479]
+	GetHandleVerifier [0x00007FF7B4A50606+953270]
+	(No symbol) [0x00007FF7B48EE5DF]
+	(No symbol) [0x00007FF7B48E92B4]
+	(No symbol) [0x00007FF7B48E93EB]
+	(No symbol) [0x00007FF7B48D9C24]
+	BaseThreadInitThunk [0x00007FFA84E9257D+29]
+	RtlUserThreadStart [0x00007FFA863EAA48+40]</status>
+</kw>
+<return>
+<value>${clik_submit_button}</value>
+<status status="NOT RUN" start="2024-04-29T10:00:12.834580" elapsed="0.000000"/>
+</return>
+<arg>Submit</arg>
+<status status="FAIL" start="2024-04-29T10:00:11.436084" elapsed="1.398496">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submitbtn" type="submit" class="btn btn-primary" name="signup" value="sign up"&gt;...&lt;/button&gt; is not clickable at point (692, 660). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20240424/r20110914/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKbM66XL5oUDFUEPgwMdxJYBDg" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=124.0.6367.63)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B49770C2+63090]
+	(No symbol) [0x00007FF7B48E2D12]
+	(No symbol) [0x00007FF7B477EC65]
+	(No symbol) [0x00007FF7B47CBB34]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7B47C7164]
+	(No symbol) [0x00007FF7B47C5EF9]
+	(No symbol) [0x00007FF7B47BA708]
+	(No symbol) [0x00007FF7B47E6FDA]
+	(No symbol) [0x00007FF7B47BA00A]
+	(No symbol) [0x00007FF7B47E71F0]
+	(No symbol) [0x00007FF7B4803412]
+	(No symbol) [0x00007FF7B47E6D83]
+	(No symbol) [0x00007FF7B47B83A8]
+	(No symbol) [0x00007FF7B47B9441]
+	GetHandleVerifier [0x00007FF7B4D7262D+4238301]
+	GetHandleVerifier [0x00007FF7B4DAF78D+4488509]
+	GetHandleVerifier [0x00007FF7B4DA7A6F+4456479]
+	GetHandleVerifier [0x00007FF7B4A50606+953270]
+	(No symbol) [0x00007FF7B48EE5DF]
+	(No symbol) [0x00007FF7B48E92B4]
+	(No symbol) [0x00007FF7B48E93EB]
+	(No symbol) [0x00007FF7B48D9C24]
+	BaseThreadInitThunk [0x00007FFA84E9257D+29]
+	RtlUserThreadStart [0x00007FFA863EAA48+40]</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-04-29T10:00:12.834580" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Pass Test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-04-29T10:00:12.834580" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-29T09:59:54.727917" elapsed="18.106663">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="submitbtn" type="submit" class="btn btn-primary" name="signup" value="sign up"&gt;...&lt;/button&gt; is not clickable at point (692, 660). Other element would receive the click: &lt;iframe id="aswift_2" name="aswift_2" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/html/r20240424/r20110914/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-9173866185064071&amp;amp;fa=1&amp;amp;ifi=3&amp;amp;uci=a!3&amp;amp;btvi=1" data-google-container-id="a!3" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CKbM66XL5oUDFUEPgwMdxJYBDg" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=124.0.6367.63)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B49770C2+63090]
+	(No symbol) [0x00007FF7B48E2D12]
+	(No symbol) [0x00007FF7B477EC65]
+	(No symbol) [0x00007FF7B47CBB34]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7B47C7164]
+	(No symbol) [0x00007FF7B47C5EF9]
+	(No symbol) [0x00007FF7B47BA708]
+	(No symbol) [0x00007FF7B47E6FDA]
+	(No symbol) [0x00007FF7B47BA00A]
+	(No symbol) [0x00007FF7B47E71F0]
+	(No symbol) [0x00007FF7B4803412]
+	(No symbol) [0x00007FF7B47E6D83]
+	(No symbol) [0x00007FF7B47B83A8]
+	(No symbol) [0x00007FF7B47B9441]
+	GetHandleVerifier [0x00007FF7B4D7262D+4238301]
+	GetHandleVerifier [0x00007FF7B4DAF78D+4488509]
+	GetHandleVerifier [0x00007FF7B4DA7A6F+4456479]
+	GetHandleVerifier [0x00007FF7B4A50606+953270]
+	(No symbol) [0x00007FF7B48EE5DF]
+	(No symbol) [0x00007FF7B48E92B4]
+	(No symbol) [0x00007FF7B48E93EB]
+	(No symbol) [0x00007FF7B48D9C24]
+	BaseThreadInitThunk [0x00007FFA84E9257D+29]
+	RtlUserThreadStart [0x00007FFA863EAA48+40]</status>
+</test>
+<test id="s1-t2" name="testcase-2(SwitchTo)" line="46">
+<kw name="Setup OPen Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:12.834580" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-04-29T10:00:13.200783" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-29T10:00:17.344634" level="INFO">${broweser} = 2</msg>
+<var>${broweser}</var>
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-29T10:00:12.834580" elapsed="4.510054"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-29T10:00:17.346225" elapsed="0.308931"/>
+</kw>
+<return>
+<value>${broweser}</value>
+<status status="PASS" start="2024-04-29T10:00:17.655156" elapsed="0.000000"/>
+</return>
+<status status="PASS" start="2024-04-29T10:00:12.834580" elapsed="4.820576"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-29T10:00:17.655156" level="INFO">Clicking element '//*[text()='SwitchTo']'.</msg>
 <arg>//*[text()='SwitchTo']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-27T19:49:55.213259" elapsed="0.162589"/>
+<status status="PASS" start="2024-04-29T10:00:17.655156" elapsed="0.075266"/>
 </kw>
-<status status="PASS" start="2024-04-27T19:49:28.147104" elapsed="27.237580"/>
+<status status="PASS" start="2024-04-29T10:00:12.834580" elapsed="4.896840"/>
 </test>
-<status status="PASS" start="2024-04-27T19:49:27.179954" elapsed="28.221160"/>
+<status status="FAIL" start="2024-04-29T09:59:54.412997" elapsed="23.336761"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Selenium">Selenium</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="Selenium">Selenium</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-04-27T19:49:28.743606" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-29T09:59:55.936788" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-04-29T10:00:13.200783" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

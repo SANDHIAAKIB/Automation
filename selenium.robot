@@ -46,3 +46,4 @@ testcase1
 testcase-2(SwitchTo)
     Setup OPen Browser
     Click Element    //*[text()='SwitchTo']
+    Click Button    
