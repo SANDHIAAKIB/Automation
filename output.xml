@@ -1,69 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-30T10:47:16.157278" rpa="false" schemaversion="5">
-<suite id="s1" name="Selenium" source="c:\Users\Lenovo\Automation-1\selenium.robot">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-01T12:01:35.859959" rpa="false" schemaversion="5">
+<suite id="s1" name="Selenium" source="C:\Users\Lenovo\Automation-2\selenium.robot">
 <test id="s1-t1" name="testcase1" line="9">
 <kw name="Setup OPen Browser" owner="keyword">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-04-30T10:47:16.432142" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
-<msg time="2024-04-30T10:47:17.324448" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg time="2024-04-30T10:47:21.324089" level="INFO">${broweser} = 1</msg>
+<msg time="2024-05-01T12:01:36.212997" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<msg time="2024-05-01T12:01:37.071389" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-05-01T12:01:40.462419" level="INFO">${broweser} = 1</msg>
 <var>${broweser}</var>
 <arg>https://demo.automationtesting.in/Register.html</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-04-30T10:47:16.432142" elapsed="4.894107"/>
+<status status="PASS" start="2024-05-01T12:01:36.211917" elapsed="4.250502"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-04-30T10:47:21.326336" elapsed="0.192376"/>
+<status status="PASS" start="2024-05-01T12:01:40.462947" elapsed="0.130498"/>
 </kw>
 <return>
 <value>${broweser}</value>
-<status status="PASS" start="2024-04-30T10:47:21.518712" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-01T12:01:40.594444" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2024-04-30T10:47:16.432142" elapsed="5.086570"/>
+<status status="PASS" start="2024-05-01T12:01:36.211491" elapsed="4.382953"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-04-30T10:47:24.519111" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-05-01T12:01:43.602032" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-04-30T10:47:21.518712" elapsed="3.000399"/>
+<status status="PASS" start="2024-05-01T12:01:40.600548" elapsed="3.001484"/>
 </kw>
 <kw name="Fill Name Field" owner="keyword">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T10:47:24.525630" level="INFO">Typing text 'sandhiaakibtestlocator' into text field '//div[@class="form-group"]//div[1]//input'.</msg>
-<msg time="2024-04-30T10:47:24.869351" level="INFO">${Name} = None</msg>
+<msg time="2024-05-01T12:01:43.602032" level="INFO">Typing text 'sandhiaakibtestlocator' into text field '//div[@class="form-group"]//div[1]//input'.</msg>
+<msg time="2024-05-01T12:01:43.779928" level="INFO">${Name} = None</msg>
 <var>${Name}</var>
 <arg>//div[@class="form-group"]//div[1]//input</arg>
 <arg>sandhiaakibtestlocator</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T10:47:24.519111" elapsed="0.350240"/>
+<status status="PASS" start="2024-05-01T12:01:43.602032" elapsed="0.177896"/>
 </kw>
 <return>
 <value>${Name}</value>
-<status status="PASS" start="2024-04-30T10:47:24.869351" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-01T12:01:43.779928" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2024-04-30T10:47:24.519111" elapsed="0.354337"/>
+<status status="PASS" start="2024-05-01T12:01:43.602032" elapsed="0.177896"/>
 </kw>
 <kw name="Fill Surname" owner="keyword">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-04-30T10:47:24.876973" level="INFO">Typing text 'sandhil' into text field '//div[@class="form-group"]//div[2]//input'.</msg>
-<msg time="2024-04-30T10:47:25.016998" level="INFO">${surname} = None</msg>
+<msg time="2024-05-01T12:01:43.781927" level="INFO">Typing text 'sandhil' into text field '//div[@class="form-group"]//div[2]//input'.</msg>
+<msg time="2024-05-01T12:01:43.884912" level="INFO">${surname} = None</msg>
 <var>${surname}</var>
 <arg>//div[@class="form-group"]//div[2]//input</arg>
 <arg>sandhil</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-04-30T10:47:24.876973" elapsed="0.140025"/>
+<status status="PASS" start="2024-05-01T12:01:43.780927" elapsed="0.103985"/>
 </kw>
 <return>
 <value>${surname}</value>
-<status status="PASS" start="2024-04-30T10:47:25.016998" elapsed="0.000000"/>
+<status status="PASS" start="2024-05-01T12:01:43.884912" elapsed="0.000000"/>
 </return>
-<status status="PASS" start="2024-04-30T10:47:24.876973" elapsed="0.140025"/>
+<status status="PASS" start="2024-05-01T12:01:43.780927" elapsed="0.103985"/>
 </kw>
-<status status="PASS" start="2024-04-30T10:47:16.416514" elapsed="8.600484"/>
+<status status="PASS" start="2024-05-01T12:01:36.210483" elapsed="7.674429"/>
 </test>
-<status status="PASS" start="2024-04-30T10:47:16.166644" elapsed="8.855596"/>
+<status status="PASS" start="2024-05-01T12:01:35.867234" elapsed="8.017678"/>
 </suite>
 <statistics>
 <total>
@@ -76,6 +76,6 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2024-04-30T10:47:17.324448" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-05-01T12:01:37.071389" level="WARN">The chromedriver version (123.0.6312.86) detected in PATH at C:\Aakib\chromedriver-win64\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (124.0.6367.63); currently, chromedriver 124.0.6367.91 is recommended for chrome 124.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>

@@ -2,6 +2,7 @@
 *** Settings ***
 Library    SeleniumLibrary                                                                                                            
 Library    String
+Resource
 
 Resource    keyword.robot
 
@@ -15,9 +16,11 @@ testcase1
     Sleep    3s
     Fill Name Field
     Fill Surname    
-    # Input Text    
-    # Input Text    //input[@type="email"]    sandhiaaa@gmail.com
-    # Click Button    //input[@value="Male"]
+    Fill email
+    Gender Box
+
+    # Input Text       
+    # Click Button    
     # Sleep    2s
     # Scroll Element Into View   //button[text()=' Submit ']
     # Click Element    //select[@id="Skills"]//option[2]
